@@ -91,7 +91,7 @@ Similar to transfer learning our convolutional neural network built by using dil
 <p align="center">
   <img 
     width="600"
-    height="600"
+    height="400"
     src="https://user-images.githubusercontent.com/62461730/163132266-83ca2c52-49f6-4b3b-94bc-9fd0583f597b.png"
   >
 </p>
@@ -103,7 +103,7 @@ The above heatmaps shows that green area with some area around the houses is imp
 <p align="center">
   <img 
     width="600"
-    height="600"
+    height="400"
     src="https://user-images.githubusercontent.com/62461730/163132827-cd88475f-b446-4a8c-a9b8-9673cb1efd71.png"
   >
 </p>
