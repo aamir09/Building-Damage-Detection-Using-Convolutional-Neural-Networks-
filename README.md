@@ -36,18 +36,43 @@ Undamaged:
 Transfer learning as expected outperformed the diluted CNN. The diluted CNN reached a respective accuracy and transfer learning model was next to perfect.
 
 ### Model Explanantions and Inferences
-In this section we will look at how our model is predicting if a building is damaged or undamgaged using GradCam, Saliency Mapping, ScoreCam algorithm and visualizing some feature maps generated in the process.
+In this section we will look at how our model is predicting if a building is damaged or undamgaged using GradCam, Saliency Mapping, ScoreCam algorithm by visualizing their outputs.
 
-Transfer Learning Model 
+#### Transfer Learning Model 
 
 True Label: Damage
 Predicted Label: Damage
 
-![image](https://user-images.githubusercontent.com/62461730/163127883-2a41bf02-79c7-4d8e-bc01-770f88d73b57.png)
-
 ![image](https://user-images.githubusercontent.com/62461730/163127907-2894f5e5-14b3-4bd7-8c52-cd199c077d39.png)
 
 As can be noticed the above Saliency Map, the model looks at the buildings and the areas just around it to confirm if the building is damaged. GradCam and ScoreCam in this case points that the model looks that trees around it. 
+
+True Label: No Damage 
+Predicted Label: No Damage
+
+![image](https://user-images.githubusercontent.com/62461730/163129086-35f1ddc6-ad1e-4c91-9c29-83ed68570e6f.png)
+
+In this case you can notice all the three algorithms are pointing towards the same case, they suggest that the model is looking at the building and around it, which does logically make sense.
+
+#### CNN with Dilation
+In this case we use GradCam++ algorithm to visualize which part of the images of our model considers to be important for classifications.
+
+True Label: Damage 
+Predicted Label: Damage
+
+Original Image:
+
+![image](https://user-images.githubusercontent.com/62461730/163129650-6a35d189-3546-4844-bb85-8df016a35a52.png)
+
+GradCam++ Inference:
+
+![image](https://user-images.githubusercontent.com/62461730/163129787-6b67bf3e-2f0a-42f9-90ac-a642736b24fa.png)
+
+The models looks on the building and just around it to check for damagae wich makes sense as it is detecting the building and by the help of its surrounding coming on a conclusion of damage.
+
+
+
+
 
 
 
