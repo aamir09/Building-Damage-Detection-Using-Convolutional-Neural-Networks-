@@ -84,6 +84,36 @@ GradCam++ Inference:
 Similar to transfer learning our convolutional neural network built by using dilation in the later layers is also able locate buildings and look around it for any damage or flood.
 
 
+### Additional Work
+
+1) We took inferences by clipping a small square from the image and calculating the loss after clipping that sqaure. We repeated this process by clipping such squares from the image in the size of 32*32 and observed the change in the loss, corresponding to each clipping. We used the red channel of the image to create this heat map by providing increments w.r.t to the change in loss associated with the clipped portion in the red channel.
+
+![image](https://user-images.githubusercontent.com/62461730/163132266-83ca2c52-49f6-4b3b-94bc-9fd0583f597b.png)
+
+The above heatmaps shows that green area with some area around the houses is important for the model for classification. A hypothesis for such behaviour might be that the model is looking at the water level in and around these trees or some patterns around them which help it in recoginition.
+
+2) To add to the challenge, we add  random noise to the images and retrain our transfer learning model to see how does it impacts our model accuracy and if our model is able to classify the buildings correctly. We also provide our model with some weapons to fight this battle with regularization. A sample from the newly formed noisy images is given below:
+
+![image](https://user-images.githubusercontent.com/62461730/163132827-cd88475f-b446-4a8c-a9b8-9673cb1efd71.png)
+
+We used the SOTA network used before to train on this noisy data and it was found that the model was robust to the added noise and only a small amount of accurcy as lost. The following image shows the result for the same:
+
+![image](https://user-images.githubusercontent.com/62461730/163133205-fe8ca22b-3811-4ed5-ac0c-89c5acc94e10.png)
+
+### Conclusion
+
+Inferring from the above results, dilated-CNN works better and faster while providing us a larger receptive field to better understand the effect on a pixel by it’s surroundings. The ability to use transfer learning enabled us to solve the problem more accurately even after adding random noise to the images, the model didn’t loose much of its power of classifying the buildings. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
