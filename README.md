@@ -18,7 +18,7 @@ Undamaged:
 2) Transfer Learning: Using a SOTA network and modifying it to provide the classification.
 
 ## Dataset 
-1) The data set consists of satellite images of buildings and areas affected by lota hurricane. The clarity of the images is low. The data can be found <a href='https://www.kaggle.com/datasets/kmader/satellite-images-of-hurricane-damage' target='_blank'>here</a>
+1) The data set consists of satellite images of buildings and areas affected by lota hurricane. The clarity of the images is low. The data can be found <a href='https://www.kaggle.com/datasets/kmader/satellite-images-of-hurricane-damage' target='_blank'>here.</a>
 
 2) We Augmented the data using keras’s ImageDataGenerator adding rotation, zoom, height modifications etc to the data.
 
@@ -35,7 +35,21 @@ Undamaged:
 
 Transfer learning as expected outperformed the diluted CNN. The diluted CNN reached a respective accuracy and transfer learning model was next to perfect.
 
-### Inferences 
+### Model Explanantions and Inferences
+In this section we will look at how our model is predicting if a building is damaged or undamgaged using GradCam, Saliency Mapping, ScoreCam algorithm and visualizing some feature maps generated in the process.
+
+Transfer Learning Model 
+
+True Label: Damage
+Predicted Label: Damage
+
+![image](https://user-images.githubusercontent.com/62461730/163127883-2a41bf02-79c7-4d8e-bc01-770f88d73b57.png)
+
+![image](https://user-images.githubusercontent.com/62461730/163127907-2894f5e5-14b3-4bd7-8c52-cd199c077d39.png)
+
+As can be noticed the above Saliency Map, the model looks at the buildings and the areas just around it to confirm if the building is damaged. GradCam and ScoreCam in this case points that the model looks that trees around it. 
+
+
 
 
 
