@@ -119,31 +119,3 @@ We used the SOTA network used before to train on this noisy data and it was foun
 ### Conclusion
 
 Inferring from the above results, dilated-CNN works better and faster while providing us a larger receptive field to better understand the effect on a pixel by it’s surroundings. The ability to use transfer learning enabled us to solve the problem more accurately even after adding random noise to the images, the model didn’t loose much of its power of classifying the buildings. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
