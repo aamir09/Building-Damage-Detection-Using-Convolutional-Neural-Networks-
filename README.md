@@ -113,7 +113,7 @@ The above heatmaps shows that green area with some area around the houses is imp
 We used the SOTA network used before to train on this noisy data and it was found that the model was robust to the added noise and only a small amount of accurcy as lost. The following image shows the result for the same:
 
 
-![image]("https://user-images.githubusercontent.com/62461730/163133205-fe8ca22b-3811-4ed5-ac0c-89c5acc94e10.png")
+![image](https://user-images.githubusercontent.com/62461730/163135193-1014f3ad-7b45-477a-90b3-bef49257ac6d.png)
 
 
 ### Conclusion
