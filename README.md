@@ -70,6 +70,20 @@ GradCam++ Inference:
 
 The models looks on the building and just around it to check for damagae wich makes sense as it is detecting the building and by the help of its surrounding coming on a conclusion of damage.
 
+True Label: No Damage
+Predicted Label: No Damage
+
+Original Image:
+
+![image](https://user-images.githubusercontent.com/62461730/163130913-edb62c2a-3608-49db-a39c-fe0c03ad1622.png)
+
+GradCam++ Inference:
+
+![image](https://user-images.githubusercontent.com/62461730/163131110-8f60f8e1-dd18-40d3-aa50-1b4c04a1b5aa.png)
+
+Similar to transfer learning our convolutional neural network built by using dilation in the later layers is also able locate buildings and look around it for any damage or flood.
+
+
 
 
 
